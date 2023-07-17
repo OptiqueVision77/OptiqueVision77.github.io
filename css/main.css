@@ -210,6 +210,32 @@ main > section {
     border-bottom: 1px solid #fff;
 }
 
+.sec-title h3 {
+    font-size: 36px;
+    margin: 0 0 30px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.sec-title.white h3 {
+    color: #fff;
+}
+
+.sec-title h3:after {
+    border-bottom: 1px solid #E30000C7;
+    content: "";
+    display: block;
+    left: 45%;
+    bottom: 0;
+    position: absolute;
+    width: 115px;
+}
+
+.sec-title.white h3:after {
+    border-bottom: 1px solid #fff;
+}
+
 .parallax {
     background-attachment: fixed;
     background-position: center top;
@@ -1239,6 +1265,10 @@ textarea.form-control {
         font-size: 40px;
     }
 
+    .caption-content h3 {
+        font-size: 30px;
+    }
+
     .caption-content p {
         font-size: 25px;
     }
@@ -1308,6 +1338,14 @@ textarea.form-control {
         left: 30%;
     }
 
+    .sec-title h3 {
+        font-size: 25px;
+    }
+
+    .sec-title h3:after {
+        left: 30%;
+    }
+
 /*navigation*/
     .navbar-inverse .navbar-toggle {
         border-color: #fff;
@@ -1320,6 +1358,10 @@ textarea.form-control {
 
 /* slider */
     .caption-content h2 {
+        font-size: 18px;
+    }
+
+    .caption-content h3 {
         font-size: 18px;
     }
 
@@ -1442,8 +1484,16 @@ textarea.form-control {
         left: 38%;
     }
 
+    .sec-title h3:after {
+        left: 38%;
+    }
+
 /* home slider */
     .caption-content h2 {
+        font-size: 35px;
+    }
+
+    .caption-content h3 {
         font-size: 35px;
     }
 
