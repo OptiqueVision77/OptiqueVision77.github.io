@@ -65,7 +65,14 @@ main > section {
 }
 
 .btn-blue {
-    background-color: rgba(0,158,227, 0.78);
+    background-color: rgba(227, 193, 0, 0.78);
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
+    padding: 15px 55px;
+    color: #fff;
+}
+
+.btn-gold {
+    background-color: #e3c100c7;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 15px 55px;
     color: #fff;
@@ -85,7 +92,7 @@ main > section {
 }
 
 .bg-blue {
-    background-color: #009EE3;
+    background-color: #e3c100c7;
 }
 
 .bg-red {
@@ -159,7 +166,7 @@ main > section {
 }
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color: #E30000C7;
+	color: #e3c100c7;
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -378,6 +385,14 @@ h1.navbar-brand {
     text-transform: uppercase;
 }
 
+.caption-content h3 {
+    color: #f8f8f8;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
 .caption-content > span {
     display: block;
     font-size: 24px;
@@ -389,6 +404,19 @@ h1.navbar-brand {
     font-size: 29px;
     margin-bottom: 65px;
 }
+
+
+.opening-hours-table {
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 2px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    max-width: 450px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
 
 /* The duplicate parts/slices */
 
@@ -894,7 +922,9 @@ ul.external li a:hover {
 
 .price-table.featured ul li:last-child,
 .price-table ul li:last-child:hover {
-    background-color: #009EE3;
+
+    /* background-color: #009EE3; */
+    background-color: #e3c100c7;
 }
 
 .price-table.featured ul li:last-child a,
@@ -902,7 +932,38 @@ ul.external li a:hover {
     color: #fff;
 }
 
+/*=================================================================
+	Nos Marques
+==================================================================*/
 
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider {
+    height: 100px;
+    width: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(2500px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+    margin-right: 100px;
+}
 /*=================================================================
 	Price
 ==================================================================*/
@@ -1131,7 +1192,7 @@ textarea.form-control {
 }
 
 .footer-social ul li a:hover {
-    color: #009EE3;
+    color: #e3c100c7;
 }
 
 .footer-content > p {
